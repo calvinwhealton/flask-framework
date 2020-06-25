@@ -14,7 +14,7 @@ def index():
 def about():
   return render_template('about.html')
 
-@app.route('/graph.html',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def stock_pars():
 
     # gives a dictionary of all the values
@@ -40,7 +40,7 @@ def stock_pars():
     readin = pd.read_csv(req_dat.url)
 
     # naming output file
-    output_file("graph.html")
+    output_file("templates/graph.html")
 
     # tools that can be displayed
     TOOLS = "pan,wheel_zoom,box_zoom,reset,save,box_select"
