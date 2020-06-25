@@ -14,7 +14,7 @@ def index():
 def about():
   return render_template('about.html')
 
-@app.route('/stock_pars',methods=['GET','POST'])
+@app.route('/graph.html',methods=['GET','POST'])
 def stock_pars():
 
     # gives a dictionary of all the values
