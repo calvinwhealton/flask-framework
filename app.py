@@ -93,7 +93,7 @@ def stock_pars():
         df_stocks.drop('CloseAdj',axis=1,inplace=True)
     '''
 
-    return render_tamplate('graph.html')
+    return render_template('graph.html')
 
 if __name__ == '__main__':
   app.run(port=33507)
